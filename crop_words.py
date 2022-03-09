@@ -47,7 +47,7 @@ def generate_words(image_name, score_bbox, image):
         folder = '/'.join( image_name.split('/')[:-1])
 
         #CHANGE DIR
-        dir = '/content/Pipeline/Crop Words/'
+        dir = '/kaggle/working/crop_words/'
 
         if os.path.isdir(os.path.join(dir + folder)) == False :
           os.makedirs(os.path.join(dir + folder))
@@ -59,9 +59,9 @@ def generate_words(image_name, score_bbox, image):
         except:
           continue
 
-data=pd.read_csv('PATH TO CSV')
+data=pd.read_csv('/kaggle/working/data.csv')
 
-start = PATH TO TEST IMAGES
+start = '/kaggle/input/vizwiz-image-caption/train/train'
 
 for image_num in range(data.shape[0]):
   image = cv2.imread(os.path.join(start, data['image_name'][image_num]))
