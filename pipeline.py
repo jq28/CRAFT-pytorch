@@ -25,8 +25,6 @@ from craft import CRAFT
 
 from collections import OrderedDict
 
-from google.colab.patches import cv2_imshow
-
 def str2bool(v):
     return v.lower() in ("yes", "y", "true", "t", "1")
 
