@@ -106,6 +106,8 @@ if __name__ == '__main__':
     for k, image_path in enumerate(image_list):
         print("Test image {:d}/{:d}: {:s}".format(k+1, len(image_list), image_path), end='\r')
         image = imgproc.loadImage(image_path)
+        image, target_ratio, size_heatmap = imgproc.resize_aspect_ratio(image, 256, interpolation=cv2.INTER_LINEAR, mag_ratio=args.mag_ratio)
+
 
         bboxes, polys, score_text, det_scores = test.test_net(net, image, args.text_threshold, args.link_threshold, args.low_text, args.cuda, args.poly, args, refine_net)
         
