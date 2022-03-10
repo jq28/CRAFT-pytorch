@@ -2,7 +2,6 @@ import os
 import numpy as np
 import cv2
 import pandas as pd
-from google.colab.patches import cv2_imshow
 
 def crop(pts, image):
 
