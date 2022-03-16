@@ -86,7 +86,7 @@ def demo(opt):
             for img_name, pred, pred_max_prob in zip(image_path_list, preds_str, preds_max_prob):
                 
                 
-                start = PATH TO CROPPED WORDS
+                start = '/kaggle/working/crop_words/'
                 path = os.path.relpath(img_name, start)
 
                 folder = os.path.dirname(path)
