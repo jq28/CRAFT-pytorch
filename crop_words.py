@@ -54,7 +54,6 @@ def generate_words(image_name, score_bbox, image):
         try:
           file_name = os.path.join(dir + image_name)
           cv2.imwrite(file_name+'_{}_{}_{}_{}_{}_{}_{}_{}.jpg'.format(l_t, t_l, r_t ,t_r, r_b , b_r ,l_b, b_l), word)
-          print('Image saved to '+file_name+'_{}_{}_{}_{}_{}_{}_{}_{}.jpg'.format(l_t, t_l, r_t ,t_r, r_b , b_r ,l_b, b_l))
         except:
           continue
 
