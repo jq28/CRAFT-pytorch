@@ -146,6 +146,7 @@ if __name__ == '__main__':
     cudnn.benchmark = True
     cudnn.deterministic = True
     opt.num_gpu = torch.cuda.device_count()
+    print(opt.num_gpu)
     # print (opt.image_folder)
 
     # pred_words=demo(opt)
