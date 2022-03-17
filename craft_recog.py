@@ -7,11 +7,10 @@ import torch.backends.cudnn as cudnn
 import torch.utils.data
 import torch.nn.functional as F
 
-%cd /kaggle/working/deep-text-recognition-benchmark
+
 from utils import CTCLabelConverter, AttnLabelConverter
 from dataset import RawDataset, AlignCollate
 from model import Model
-%cd /kaggle/working
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 import pandas as pd
