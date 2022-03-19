@@ -106,7 +106,7 @@ def demo(opt):
 
                 # calculate confidence score (= multiply of pred_max_prob)
                 confidence_score = pred_max_prob.cumprod(dim=0)[-1]
-                print(f'{image_name:25s}\t {pred:25s}\t {confidence_score:0.4f}')
+                #print(f'{image_name:25s}\t {pred:25s}\t {confidence_score:0.4f}')
                 log.write(f'{image_name:25s}\t {pred:25s}\t {confidence_score:0.4f}\n')
 
             log.close()
