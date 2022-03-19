@@ -79,7 +79,7 @@ def demo(opt):
             dashed_line = '-' * 80
             head = f'{"image_path":25s}\t {"predicted_labels":25s}\t confidence score'
             
-            print(f'{dashed_line}\n{head}\n{dashed_line}')
+            #print(f'{dashed_line}\n{head}\n{dashed_line}')
             # log.write(f'{dashed_line}\n{head}\n{dashed_line}\n')
 
             preds_prob = F.softmax(preds, dim=2)
